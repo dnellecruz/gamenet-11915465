@@ -1401,6 +1401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNameText: {fileID: 5716764363858538551}
   healthBar: {fileID: 5258714837568434149}
+  turret: {fileID: 8907808722248450264}
   camera: {fileID: 0}
 --- !u!114 &2248513591956717298
 MonoBehaviour:
@@ -1714,7 +1715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6190419991462913708
 Transform:
   m_ObjectHideFlags: 0

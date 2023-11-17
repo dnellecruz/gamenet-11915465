@@ -282,6 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNameText: {fileID: 5803247182471039537}
   healthBar: {fileID: 6375830926187704728}
+  turret: {fileID: 8989725543974254955}
   camera: {fileID: 0}
 --- !u!114 &-593930096879683639
 MonoBehaviour:

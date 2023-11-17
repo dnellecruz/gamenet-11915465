@@ -9,6 +9,7 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI playerNameText;
     public Image healthBar;
+    public GameObject turret;
 
     public Camera camera;
 
@@ -30,6 +31,7 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
             GetComponent<LastManStanding>().enabled = false;
 
             healthBar.gameObject.SetActive(false);
+            turret.SetActive(false);
         }
         else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("dr"))
         {
@@ -41,6 +43,7 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
             GetComponent<LastManStanding>().enabled = photonView.IsMine;
 
             healthBar.gameObject.SetActive(true);
+            turret.SetActive(true);
         }
 
         playerNameText.text = photonView.Owner.NickName;
